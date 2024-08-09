@@ -23,10 +23,12 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@203.161.52.96 '
             #!/bin/bash
           
-            # Change directory to the location of the Docker project
+            # Change directory to the location of the project
             cd /home/wpt/public_html
-            git clone https://github.com/wptom/wptom-astro.git
+            # Pull the latest changes from the repository
+            git pull https://github.com/wptom/wptom-astro.git
             cd wptom-astro
             npm install
-            astro build
+            npm audit fix
+            npm run build
           '
