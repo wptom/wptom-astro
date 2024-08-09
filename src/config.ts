@@ -30,7 +30,7 @@ export const SOCIALS: SocialObjects = [
     name: "Github",
     href: "https://github.com/wptom",
     linkTitle: ` ${SITE.title} on Github`,
-    active: true,
+    active: false,
   },
   {
     name: "Facebook",
