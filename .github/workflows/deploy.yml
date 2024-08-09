@@ -33,7 +33,7 @@ jobs:
             git clone https://github.com/wptom/wptom-astro.git .
           
             # Install dependencies and build the project
-            npm ci
+            npm install
             npm audit fix
           
             # Check and build the project
