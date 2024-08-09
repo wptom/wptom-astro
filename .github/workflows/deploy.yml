@@ -36,6 +36,10 @@ jobs:
               git clone https://github.com/wptom/wptom-astro.git "$PROJECT_DIR"
               cd "$PROJECT_DIR"
             fi
+          
+            # delete /home/wpt/public_html/wptom-astro/dist
+            cd "$PROJECT_DIR"
+            rm -rf dist
         
             # Install dependencies and build the project
             npm install
