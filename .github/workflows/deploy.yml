@@ -37,9 +37,6 @@ jobs:
             cd "$PROJECT_DIR"
             fi
         
-            # Delete everything in the directory except the dist folder
-            find . -maxdepth 1 ! -name 'dist' ! -name '.' ! -name '..' -exec rm -rf {} \;
-        
             # Install dependencies and build the project
             npm install
             npm audit fix
