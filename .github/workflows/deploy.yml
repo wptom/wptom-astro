@@ -24,6 +24,6 @@ jobs:
             #!/bin/bash
           
             # Change directory to the location of the Docker project
-            cd /home/wpt/public_html/wptom.com
+            cd /home/wpt/public_html
             git pull origin main
           '
