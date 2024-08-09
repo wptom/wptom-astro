@@ -27,7 +27,7 @@ jobs:
             cd /home/wpt/public_html/wptom-astro
           
             # Delete content of the folder except dist folder
-            find . ! -name 'distro' -type f -exec rm -f {} +
+            find . ! -name 'dist' -type f -exec rm -f {} +
           
             # Pull the latest changes from the repository
             git pull origin main
