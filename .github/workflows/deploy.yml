@@ -29,8 +29,8 @@ jobs:
             # Delete everything in the /home/wpt/public_html/wptom-astro folder except folder named dist
             find . -maxdepth 1 ! -name 'dist' ! -name '.' ! -name '..' -exec rm -rf {} \;
           
-            # Pull the latest changes from the repository
-            git pull origin main
+            # Clone the latest changes from the repository https://github.com/wptom/wptom-astro.git into this directory
+            git clone https://github.com/wptom/wptom-astro.git .
           
             # Install dependencies and build the project
             npm ci
