@@ -25,5 +25,8 @@ jobs:
           
             # Change directory to the location of the Docker project
             cd /home/wpt/public_html
-            git clone https://github.com/wptom/wptom-astro.git .
+            git clone https://github.com/wptom/wptom-astro.git
+            cd wptom-astro
+            npm install
+            astro build
           '
