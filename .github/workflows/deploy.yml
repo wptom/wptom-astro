@@ -32,5 +32,8 @@ jobs:
             # Install dependencies and build the project
             npm install
             npm audit fix
-            npm run build
+          
+            # Check and build the project
+            npm run check || { echo "astro check failed"; exit 1; }
+            npm run build || { echo "astro build failed"; exit 1; }
           EOF
