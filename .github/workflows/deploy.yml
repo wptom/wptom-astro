@@ -37,5 +37,5 @@ jobs:
             npm audit fix
           
             # Check and build the project
-            npm run build || { echo "astro build failed"; exit 1; }
+            npm run build
           EOF
