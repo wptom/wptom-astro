@@ -3,12 +3,9 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+I thrive on challenges and enjoy the process of turning complex problems into elegant solutions. Whether it’s developing custom WordPress themes, creating ultra-fast static sites with Astro, or optimizing existing websites for better performance, I approach each project with dedication and a commitment to excellence.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+When I’m not coding, I’m constantly exploring new technologies and trends to stay ahead in the ever-evolving world of web development. I believe in continuous learning and am always on the lookout for new ways to improve my skills and deliver even better results for my clients.
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
@@ -31,6 +28,3 @@ Here are certain features of this site.
 - pagination
 - sitemap & rss feed
 - highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
