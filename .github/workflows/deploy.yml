@@ -47,5 +47,5 @@ jobs:
             npm audit fix --force
         
             # Check and build the project
-            astro build
+            npm build
           EOF
