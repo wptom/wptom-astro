@@ -28,7 +28,7 @@ jobs:
             # Pull the latest changes from the repository
             git pull https://github.com/wptom/wptom-astro.git
             cd wptom-astro
-            npm install
-            npm audit fix
+            # npm install
+            # npm audit fix
             npm run build
           '
