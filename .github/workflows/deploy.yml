@@ -30,7 +30,7 @@ jobs:
             git pull origin main
           
             # Install dependencies and build the project
-            npm install
+            npm run install
             npm audit fix
           
             # Check and build the project
