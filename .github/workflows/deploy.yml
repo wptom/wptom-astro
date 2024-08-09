@@ -26,6 +26,9 @@ jobs:
             # Change directory to the location of the project
             cd /home/wpt/public_html/wptom-astro
           
+            # Delete content of the folder except distro folder
+            find . ! -name 'distro' -type f -exec rm -f {} +
+          
             # Pull the latest changes from the repository
             git pull origin main
           
