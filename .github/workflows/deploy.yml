@@ -38,13 +38,12 @@ jobs:
             fi
           
             # delete /home/wpt/public_html/wptom-astro/dist
-            cd "$PROJECT_DIR"
-            rm -rf dist
+            # cd "$PROJECT_DIR"
+            # rm -rf dist
         
-            # Install dependencies and build the project
-            npm install
-            npm audit fix
+            # Install dependencies and build the project. Ignore any vulnerabilities or errors
+            npm install --ignore-scripts --no-audit
         
-            # Check and build the project
-            npm run build
+            # Check and build the project. Ignore errors
+            npm run build --if-present
           EOF
