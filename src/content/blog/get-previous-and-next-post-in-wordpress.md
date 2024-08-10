@@ -34,12 +34,12 @@ You can also use the `previous_post_link()` and `next_post_link()` functions to 
 
 ```php
 if(get_previous_post_link()) {
-// Display a link to the previous post
-previous_post_link();
+    // Display a link to the previous post
+    previous_post_link();
 }
 
 if(get_next_post_link()) {
-// Display a link to the next post
-next_post_link();
+    // Display a link to the next post
+    next_post_link();
 }
 ```
