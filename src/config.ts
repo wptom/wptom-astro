@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://wptom.com",
   author: "WPTom.com",
   profile: "https://wptom.com",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Web development. Wordpress, Astro, React, Next.js, SASS, Tailwind CSS, and more.",
   title: "WPTom",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
