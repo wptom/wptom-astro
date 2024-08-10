@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "WPTom.com",
   profile: "https://wptom.com",
   desc: "Web development. Wordpress, Astro, React, Next.js, SASS, Tailwind CSS, and more.",
-  title: "WPTom",
+  title: "WPTOM",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
