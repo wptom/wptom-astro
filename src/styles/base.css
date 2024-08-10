@@ -18,7 +18,7 @@
     --color-accent: 190, 220, 116;
     --color-card: 52, 63, 96;
     --color-card-muted: 138, 51, 2;
-    --color-border: 171, 75, 8;
+    --color-border: 100, 100, 100;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {

@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://wptom.com", // replace this with your deployed domain
+  website: "https://wptom.com",
   author: "WPTom.com",
   profile: "https://wptom.com",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
@@ -9,7 +9,7 @@ export const SITE: Site = {
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 3,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
@@ -39,6 +39,12 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
+    name: "X",
+    href: "https://x.com/wptom",
+    linkTitle: `${SITE.title} on X`,
+    active: true,
+  },
+  {
     name: "Instagram",
     href: "https://wptom.com",
     linkTitle: `${SITE.title} on Instagram`,
@@ -60,7 +66,7 @@ export const SOCIALS: SocialObjects = [
     name: "Twitter",
     href: "https://twitter.com/wptom",
     linkTitle: `${SITE.title} on Twitter`,
-    active: true,
+    active: false,
   },
   {
     name: "Twitch",
