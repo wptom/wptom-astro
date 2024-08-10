@@ -47,7 +47,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
         <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://wptom.com/posts/"
+          href="https://wptom.com/blog/"
         >
           Read the blog
         </LinkButton>
@@ -73,7 +73,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
-                  href={`/posts/${slug}/`}
+                  href={`/blog/${slug}/`}
                   frontmatter={data}
                   secHeading={false}
                 />
@@ -94,7 +94,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
               ({ data, slug }, index) =>
                 index < SITE.postPerIndex && (
                   <Card
-                    href={`/posts/${slug}/`}
+                    href={`/blog/${slug}/`}
                     frontmatter={data}
                     secHeading={false}
                   />
