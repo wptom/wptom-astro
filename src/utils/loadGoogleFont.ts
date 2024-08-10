@@ -45,14 +45,32 @@ async function loadGoogleFonts(
 > {
   const fontsConfig = [
     {
-      name: "IBM Plex Mono",
-      font: "IBM+Plex+Mono",
-      weight: 400,
+      name: "Poppins",
+      font: "Poppins:wght@300",
+      weight: 300,
       style: "normal",
     },
     {
-      name: "IBM Plex Mono",
-      font: "IBM+Plex+Mono:wght@700",
+      name: "Poppins",
+      font: "Poppins:wght@400",
+      weight: 400,
+      style: "regular",
+    },
+    {
+      name: "Poppins",
+      font: "Poppins:wght@500",
+      weight: 500,
+      style: "medium",
+    },
+    {
+      name: "Poppins",
+      font: "Poppins:wght@600",
+      weight: 600,
+      style: "semi-bold",
+    },
+    {
+      name: "Poppins",
+      font: "Poppins:wght@700",
       weight: 700,
       style: "bold",
     },
