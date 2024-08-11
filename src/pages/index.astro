@@ -23,44 +23,30 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero" class="text-center">
-      <h1>WPTom</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a>
+      <div class="container mx-auto px-4">
+        <h1>Looking For An Experienced Developer?</h1>
 
-      <p>
-        With several years of experience in WordPress development and building modern websites using Astro, Tailwind, and SCSS, I’m passionate about crafting digital experiences that are not only visually stunning but also highly functional. My journey in web development began with a curiosity for coding and has grown into a full-fledged career where I get to help businesses and individuals bring their visions to life.
-      </p>
-      <p>
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://wptom.com/blog/"
-        >
-          Read the blog
-        </LinkButton>
-      </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Get in touch:</div>
-            <Socials />
-          </div>
-        )
-      }
+        <p>
+          With several years of experience in WordPress development and building modern websites using Astro, Tailwind, and SCSS, I’m passionate about crafting digital experiences that are not only visually stunning but also highly functional. My journey in web development began with a curiosity for coding and has grown into a full-fledged career where I get to help businesses and individuals bring their visions to life.
+        </p>
+        <p>
+          <LinkButton
+            className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+            href="https://wptom.com/blog/"
+          >
+            Read the blog
+          </LinkButton>
+        </p>
+        {
+          // only display if at least one social link is enabled
+          socialCount > 0 && (
+            <div class="social-wrapper">
+              <div class="social-links">Get in touch:</div>
+              <Socials />
+            </div>
+          )
+        }
+      </div>
     </section>
 
     <Hr />
@@ -69,16 +55,18 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/blog/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
+            <div class="container mx-auto px-4">
+              <h2>Featured</h2>
+              <ul>
+                {featuredPosts.map(({ data, slug }) => (
+                  <Card
+                    href={`/blog/${slug}/`}
+                    frontmatter={data}
+                    secHeading={false}
+                  />
+                ))}
+              </ul>
+            </div>
           </section>
           {recentPosts.length > 0 && <Hr />}
         </>
@@ -88,19 +76,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       recentPosts.length > 0 && (
         <section id="recent-posts">
-          <h2>Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < SITE.postPerIndex && (
-                  <Card
-                    href={`/blog/${slug}/`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )}
-          </ul>
+          <div class="container mx-auto px-4">
+            <h2>Recent Posts</h2>
+            <ul>
+              {recentPosts.map(
+                ({ data, slug }, index) =>
+                  index < SITE.postPerIndex && (
+                    <Card
+                      href={`/blog/${slug}/`}
+                      frontmatter={data}
+                      secHeading={false}
+                    />
+                  )
+              )}
+            </ul>
+          </div>
         </section>
       )
     }

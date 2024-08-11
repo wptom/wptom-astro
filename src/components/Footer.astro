@@ -12,23 +12,24 @@ const { noMarginTop = false } = Astro.props;
 ---
 
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
-  <Hr noPadding />
-  <div class="footer-wrapper">
-    <Socials centered />
-    <div class="copyright-wrapper">
-      <span>Copyright &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
-      <span>All rights reserved.</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
-      <a href="https://wptom.com/sitemap-index.xml">Sitemap</a>
+  <div class="container mx-auto px-4">
+    <Hr noPadding />
+    <div class="footer-wrapper">
+      <Socials centered />
+      <div class="copyright-wrapper">
+        <span>Copyright &#169; {currentYear}</span>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <span>All rights reserved.</span>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <a href="https://wptom.com/sitemap-index.xml" aria-label="Sitemap" title="Sitemap">Sitemap</a>
+        <span class="separator">&nbsp;|&nbsp;</span>
+        <a target="_blank" href="https://wptom.com/rss.xml" class="rss-link" aria-label="rss feed" title="RSS Feed">RSS Feed</a>
+      </div>
     </div>
   </div>
 </footer>
 
 <style>
-  footer {
-    @apply w-full;
-  }
   .footer-wrapper {
     @apply flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4;
   }
