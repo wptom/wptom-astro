@@ -26,17 +26,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <div class="container mx-auto px-4">
         <h1>Looking For An Experienced Developer?</h1>
 
-        <p>
+        <p class="block pb-5">
           With several years of experience in WordPress development and building modern websites using Astro, Tailwind, and SCSS, I’m passionate about crafting digital experiences that are not only visually stunning but also highly functional. My journey in web development began with a curiosity for coding and has grown into a full-fledged career where I get to help businesses and individuals bring their visions to life.
         </p>
-        <p>
-          <LinkButton
-            className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-            href="https://wptom.com/blog/"
-          >
-            Read the blog
-          </LinkButton>
-        </p>
+        <a
+          class="inline-block rounded border border-lime-400 bg-lime-400 px-12 py-3 text-sm font-medium text-black uppercase hover:bg-transparent hover:text-lime-400 focus:outline-none focus:ring active:text-indigo-500"
+          href="mailto:tom@wptom.com"
+        >
+          Contact Me
+        </a>
         {
           // only display if at least one social link is enabled
           socialCount > 0 && (
